@@ -42,7 +42,7 @@ nav h1 {
   font-size: 1.6rem;
   font-weight: 700;
   background: linear-gradient(90deg, #38bdf8, #818cf8);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -102,7 +102,7 @@ nav ul li a:hover::after {
 
 .hero-text span {
   background: linear-gradient(90deg, #38bdf8, #818cf8);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -150,7 +150,7 @@ section h2 {
   font-size: 2.4rem;
   margin-bottom: 3rem;
   background: linear-gradient(90deg, #38bdf8, #818cf8);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
