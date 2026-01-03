@@ -1,94 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raunak | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raunak Mishra | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <h1>Raunak</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Raunak<span>.</span></h2>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-item">Home</a></li>
+      <li><a href="#about" class="nav-item">About</a></li>
+      <li><a href="#projects" class="nav-item">Projects</a></li>
+      <li><a href="#skills" class="nav-item">Skills</a></li>
+      <li><a href="#contact" class="nav-item">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
- <section class="hero" id="home">
-  <div class="hero-content">
-    
+
+<section id="home" class="hero">
+  <div class="hero-container">
     <div class="hero-text">
-      <h2>Hi, I'm <span>Raunak Mishra</span></h2>
-      <p>A passionate Web Developer building responsive and user-friendly websites.</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <h1>Hi, I'm <span>Raunak Mishra</span></h1>
+      <h3><span id="typing"></span></h3>
+      <p>
+        Frontend Developer focused on building modern,
+        responsive and user-friendly web applications.
+      </p>
+      <a href="#projects" class="btn">View Projects</a>
     </div>
 
     <div class="hero-image">
       <img src="Portfolio Photo.jpeg" alt="Raunak Mishra">
     </div>
-
   </div>
 </section>
 
 
- <section class="about" id="about">
-  <h2>About Me</h2>
-  <p id="about-dynamic">
-    I’m a Computer Science student who loves building things on the web and watching ideas come to life through code. 
-    From designing smooth layouts to adding interactive features, I enjoy every step of the development process. 
-    I’m naturally curious, always eager to learn new technologies, and passionate about improving my skills through real-world projects. 
-    For me, coding isn’t just about writing programs—it’s about creating experiences, solving problems, and constantly challenging myself to grow as a developer.
-  </p>
+<section id="about" class="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-container">
+    <p>
+     I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript.
+      I enjoy building responsive, user-friendly web applications with clean and efficient code. 
+     I have worked on projects like a To-Do List and a Calculator, focusing on performance, usability, and modern design principles. 
+     I am continuously learning new technologies and aim to grow as a full-stack developer while delivering real-world solutions.
+    </p>
+    
+  </div>
 </section>
 
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-card">HTML</div>
-      <div class="skill-card">CSS</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">C Programming</div>
-      <div class="skill-card">Git & GitHub</div>
-    </div>
-  </section>
+<section id="projects" class="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-grid" id="projectGrid"></div>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Personal responsive portfolio using HTML, CSS, and JavaScript.</p>
-      </div>
-      <div class="project-card">
-        <h3>To-Do List App</h3>
-        <p>Dynamic to-do list using DOM manipulation.</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
+<section id="skills" class="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skill-list">
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>JavaScript</span>
+    <span>Git & GitHub</span>
+    <span>Responsive Design</span>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <p>If you have any suggestions, feedback, or opportunities, feel free to share.</p>
+
+  <form class="suggestion-form">
+    <div class="form-group">
       <input type="text" placeholder="Your Name" required />
+    </div>
+
+    <div class="form-group">
       <input type="email" placeholder="Your Email" required />
-      <textarea rows="4" placeholder="Your Message" required></textarea>
-      <button class="btn" type="submit">Send</button>
-    </form>
-  </section>
+    </div>
 
-  <footer>
-    <p>© 2026 Raunak Mishra | All Rights Reserved</p>
-  </footer>
+    <div class="form-group">
+      <textarea placeholder="Your Suggestion or Message" rows="5" required></textarea>
+    </div>
 
-  <script src="script.js"></script>
+    <button type="submit" class="btn">Send Suggestion</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Raunak Mishra | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
